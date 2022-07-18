@@ -42,13 +42,22 @@ a {
   font-size: 1.5rem;
 }
 
- .hero-section {
-  background-image: url("../public/hero-desktop.jpg");
-  background-image: url("./hero-desktop.jpg");
+.hero-section {
+  /* background-image: url("../public/hero-desktop.jpg"); */
+  /* background-image: url("./hero-desktop.jpg"); */
   height: 290px;
+  position: relative;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hero-section img {
+  z-index: -9;
+  height: 290px;
+  width: 100%;
+  position: absolute;
+ 
 }
 
 .hero-section p {
@@ -174,6 +183,9 @@ a {
     justify-content: center;
     width: 100%;
     height: 580px;
+  }
+  .hero-section img{
+        height: 580px;
   }
 
   .hero-section p {
