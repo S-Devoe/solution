@@ -1,3 +1,4 @@
+import "../styles/global.css";
 const HeroSection = () => {
   return (
     <section className="hero-section">
