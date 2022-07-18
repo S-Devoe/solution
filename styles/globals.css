@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap");
+
+*,
+*::after,
+*::before,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header .nav-container {
+  padding-top: 16px;
+  padding-bottom: 17.4px;
+}
+
+.header .nav-container p {
+  border: 1px solid white;
+  padding-top: 7.8px;
+  padding-bottom: 7.31px;
+  padding-left: 10.63px;
+  padding-right: 9.68px;
+  font-size: 1.5rem;
+}
+
+.hero-section {
+  background-image: url("../public/assets/hero_desktop.jpg");
+  height: 290px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-section p {
+  letter-spacing: -0.05em;
+  padding-top: 6.125rem;
+  font-family: "DM sans" system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: white;
+  font-size: 28px;
+  line-height: 36.46px;
+  font-weight: 700;
+  text-align: center;
+}
+.hero-section p span {
+  display: block;
+}
+
+.movies {
+  padding-left: 77px;
+  padding-right: 77px;
+}
+
+.search {
+  margin-top: 50px;
+}
+
+.search p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 4px;
+  color: #000000;
+}
+
+.search input {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0 5px;
+  margin: 0;
+  height: 54px;
+  border: 1px solid #000000;
+  outline: none;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+}
+
+.card .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+.list {
+  margin-top: 33px;
+}
+
+.list h2 {
+  text-transform: capitalize;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  margin-bottom: 26px;
+}
+
+.list .overflow {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  gap: 13px;
+}
+.list .overflow::-webkit-scrollbar {
+  display: none;
+}
+.list .row {
+  width: 100%;
+  display: flex;
+}
+.card-list img {
+  border-radius: 12px;
+  width: 200px;
+  height: 200px;
+}
+
+.row {
+}
+
+@media screen and (min-width: 768px) {
+  .header .nav-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .header .nav-container p {
+    padding-top: 14px;
+    padding-bottom: 13.06px;
+    padding-left: 19px;
+    padding-right: 17.3px;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 580px;
+  }
+
+  .hero-section p {
+    /* width: 100%; */
+    max-width: 490px;
+    font-size: 72px;
+    line-height: 93.74px;
+    font-style: normal;
+    letter-spacing: -0.05rem;
+  }
+
+  .card h2 {
+    margin-bottom: 18px;
+  }
+
+  .card-list img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .list h2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    justify-content: flex-start;
+    padding-left: 77px;
+  }
+
+  .hero-section {
+    justify-content: flex-start;
+  }
+}
