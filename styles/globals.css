@@ -67,8 +67,12 @@ a {
 }
 
 .movies {
-  padding-left: 77px;
-  padding-right: 77px;
+  padding-left: 28px;
+  padding-right: 0;
+}
+
+.movies .search{
+  padding-right: 28px;
 }
 
 .search {
@@ -148,8 +152,6 @@ a {
   height: 200px;
 }
 
-.row {
-}
 
 @media screen and (min-width: 768px) {
   .header .nav-container {
@@ -190,6 +192,10 @@ a {
 
   .list h2 {
     margin-top: 1.5rem;
+  }
+  .movies{
+    padding-left: 77px;
+    padding-right: 0;
   }
 }
 

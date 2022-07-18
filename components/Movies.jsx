@@ -5,6 +5,7 @@ const Movies = () => {
   const [movieTitle, setMovieTitle] = useState("");
   const [movieList, setMovieList] = useState([]);
   const [found, setFound] = useState("False");
+  const [category, setCategory] = useState(false);
 
   const fetchMovies = async (movieName) => {
     fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=98e2c3ee`)
@@ -76,7 +77,8 @@ const Movies = () => {
                         <Card
                           key={index}
                           movies={mov.Type === "series" && mov}
-                        />{" "}
+                        />
+                        {setCategory(true)}
                       </div>
                     )
                 )}
