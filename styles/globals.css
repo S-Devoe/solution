@@ -43,7 +43,7 @@ a {
 }
 
 .hero-section {
-  background-image: url("../assets/hero_desktop.jpg");
+  background: url("../assets/hero_desktop.jpg");
   height: 290px;
   width: 100%;
   background-size: 100% 100%;

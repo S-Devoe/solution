@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import Search from "./Search";
 import Card from "./Card";
 const Movies = () => {
-  const [movieTitle, setMovieTitle] = useState("");
+
   const [movieList, setMovieList] = useState([]);
   const [found, setFound] = useState("False");
-  const [category, setCategory] = useState(false);
 
   const fetchMovies = async (movieName) => {
     fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=98e2c3ee`)
@@ -23,27 +22,12 @@ const Movies = () => {
       .catch((err) => console.log(err.message));
   };
 
-  const setMovie = (e) => {
-    setMovieTitle(e.target.value);
-  };
-
-  const getMovieList = (e) => {
-    if (e.key === "Enter") {
-      fetchMovies(movieTitle);
-    }
-  };
-  console.log(movieList);
-
-  //   useEffect(() => {
-  //     fetchMovies();
-  //   }, []);
 
   return (
     <section className="movies">
       <Search
-        value={movieTitle}
-        onKeyPress={getMovieList}
-        onChange={setMovie}
+        fetchMovies={fetchMovies}
+        
       />
 
       <div className="container">
@@ -78,7 +62,6 @@ const Movies = () => {
                           key={index}
                           movies={mov.Type === "series" && mov}
                         />
-                        {setCategory(true)}
                       </div>
                     )
                 )}
