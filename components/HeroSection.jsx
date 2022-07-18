@@ -1,4 +1,3 @@
-
 const HeroSection = () => {
   return (
     <section className="hero-section">

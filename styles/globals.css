@@ -42,8 +42,9 @@ a {
   font-size: 1.5rem;
 }
 
-.hero-section {
-  background: url("../public/hero-desktop.jpg");
+ .hero-section {
+  background-image: url("../public/hero-desktop.jpg");
+  background-image: url("./hero-desktop.jpg");
   height: 290px;
   width: 100%;
   background-size: cover;
@@ -62,6 +63,10 @@ a {
   font-weight: 700;
   text-align: center;
 }
+.hero-section2 {
+  position: absolute;
+  z-index: -2;
+}
 .hero-section p span {
   display: block;
 }
@@ -71,7 +76,7 @@ a {
   padding-right: 0;
 }
 
-.movies .search{
+.movies .search {
   padding-right: 28px;
 }
 
@@ -152,7 +157,6 @@ a {
   height: 200px;
 }
 
-
 @media screen and (min-width: 768px) {
   .header .nav-container {
     padding-top: 40px;
@@ -193,7 +197,7 @@ a {
   .list h2 {
     margin-top: 1.5rem;
   }
-  .movies{
+  .movies {
     padding-left: 77px;
     padding-right: 0;
   }
