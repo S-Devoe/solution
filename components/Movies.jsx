@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import Search from "./Search";
 import Card from "./Card";
 const Movies = () => {
