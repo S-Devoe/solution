@@ -7,7 +7,7 @@ const Movies = () => {
   const [found, setFound] = useState("False");
 
   const fetchMovies = async (movieName) => {
-    fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=98e2c3ee`)
+    fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=98e2c3ee`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
